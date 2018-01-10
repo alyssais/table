@@ -1,4 +1,4 @@
-require_relative "../../table"
+require "ansi/string_view"
 
 describe ANSI::StringView do
   let(:raw)   { "foo \c[[33mhel\c[[32ml\c[[33mlo\c[[0m bar" }
