@@ -1,0 +1,31 @@
+table -- turn tab-delemited input into tables
+
+Better than `column -t` because it's aware of ANSI escape sequences,
+and so doesn't choke on colors.
+
+DEPENDENCIES
+
+A working Ruby interpreter is required.
+
+INSTALLATION
+
+Recommended installation is through Homebrew:
+
+    brew install alyssais/formulae/table
+
+Or, obtain the source code and run the following from the project root:
+
+    rake install
+
+USAGE
+
+    echo ... | table
+    table tabfile.tsv
+
+CONTRIBUTING
+
+File bug reports and pull requests at https://github.com/alyssais/table.
+
+AUTHOR
+
+Alyssa Ross <hi@alyssa.is>
