@@ -5,7 +5,7 @@ require "version"
 
 Gem::Specification.new do |spec|
   spec.name          = "table"
-  spec.version       = VERSION
+  spec.version       = Version
   spec.authors       = ["Alyssa Ross"]
   spec.email         = ["hi@alyssa.is"]
 
