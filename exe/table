@@ -7,6 +7,8 @@ require "ansi/string_view"
 def main
   table = ARGF.each_line.map { |l| l.chomp.split("\t").map { |cell| ANSI::StringView.new(cell).rstrip } }
 
+  return if table.empty?
+
   width = table.map(&:size).max
   column_widths = Array.new(width) { |i|
     table
